@@ -1,0 +1,158 @@
+[2021-08-12 18:38:42,920][INFO]>hi
+[2021-08-12 18:39:15,575][INFO]>hi
+[2021-08-12 18:39:40,531][INFO]>hi
+[2021-08-13 11:57:29,404][INFO]>hi
+[2021-08-13 11:57:39,075][INFO]>hi
+[2021-08-13 11:58:05,932][INFO]>hi
+[2021-08-13 11:58:16,841][INFO]>hi
+[2021-08-13 11:58:57,740][INFO]>hi
+[2021-08-13 11:59:04,824][INFO]>hi
+[2021-08-13 12:00:48,636][INFO]>SALUTTI
+[2021-08-13 12:01:03,009][INFO]>SALUTTI
+[2021-08-13 12:07:47,800][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. Setting default app value to: Normal
+[2021-08-13 12:08:04,864][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. Setting default app value to: Normal
+[2021-08-13 12:08:23,941][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. Setting default app value to: Normal
+[2021-08-13 12:09:19,820][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. Setting default app value to: Normal
+[2021-08-13 12:09:19,821][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. Setting default app value to: Normal
+[2021-08-13 12:10:02,417][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. Setting default app value to: Normal
+[2021-08-13 12:10:02,417][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Settnig default to Normal
+[2021-08-13 12:10:19,565][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. Setting default app value to: Normal
+[2021-08-13 12:10:19,565][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Settnig default to Normal
+[2021-08-13 12:13:20,366][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. Setting default app value to: Normal
+[2021-08-13 12:13:20,366][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Settnig default to Normal
+[2021-08-13 23:24:18,003][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App is will run in mode: Normal
+[2021-08-13 23:24:18,003][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-13 23:24:51,021][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App is will run in mode: Normal
+[2021-08-13 23:24:51,021][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-14 00:27:54,213][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-14 00:27:54,213][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-14 00:28:09,744][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-14 00:28:09,744][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-14 00:28:18,696][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-14 00:28:18,696][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-14 00:28:33,555][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-14 00:28:33,555][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-14 00:30:03,412][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-14 00:30:03,412][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-14 00:30:39,383][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-14 00:30:39,383][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-14 00:32:15,403][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-14 00:32:15,403][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-14 00:32:57,330][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-14 00:32:57,330][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-14 00:33:32,057][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-14 00:33:32,057][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-14 00:34:04,530][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-14 00:34:04,530][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-14 22:41:41,429][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-14 22:41:41,429][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-14 22:44:10,399][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-14 22:44:10,400][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-14 22:45:12,219][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-14 22:45:12,220][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-14 22:51:56,921][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-14 22:51:56,922][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-14 22:52:25,824][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-14 22:52:25,825][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-14 22:53:19,554][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-14 22:53:19,555][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-14 22:53:41,899][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-14 22:53:41,900][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-14 22:54:11,227][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-14 22:54:11,228][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-14 22:57:39,027][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-14 22:57:39,027][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-14 22:58:14,257][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-14 22:58:14,257][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-14 22:58:32,316][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-14 22:58:32,316][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 21:31:23,878][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 21:31:23,878][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 21:33:11,509][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 21:33:11,509][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 21:33:53,034][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 21:33:53,034][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 21:34:22,453][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 21:34:22,453][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 22:43:43,458][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 22:43:43,458][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 22:43:56,664][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 22:43:56,664][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 22:44:35,397][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 22:44:35,397][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 23:09:39,547][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 23:09:39,547][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 23:10:15,236][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 23:10:15,236][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 23:11:00,705][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 23:11:00,705][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 23:11:30,913][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 23:11:30,914][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 23:11:59,276][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 23:11:59,276][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 23:12:42,711][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 23:12:42,712][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 23:13:23,970][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 23:13:23,971][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 23:13:54,321][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 23:13:54,322][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 23:17:12,754][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 23:17:12,754][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 23:18:59,316][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 23:18:59,316][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 23:19:12,986][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 23:19:12,986][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 23:19:26,136][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 23:19:26,136][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 23:20:37,765][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 23:20:37,765][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 23:21:17,939][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 23:21:17,939][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 23:21:56,537][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 23:21:56,537][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 23:27:54,888][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 23:27:54,898][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 23:28:36,289][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 23:28:36,289][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 23:29:45,816][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 23:29:45,816][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 23:30:57,280][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 23:30:57,280][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 23:31:29,146][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 23:31:29,146][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 23:32:02,349][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 23:32:02,349][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 23:32:33,822][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 23:32:33,822][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 23:33:44,006][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 23:33:44,006][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-15 23:33:55,731][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-15 23:33:55,732][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-16 00:00:37,766][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-16 00:00:37,767][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-16 00:01:00,772][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-16 00:01:00,773][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-16 00:04:38,430][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-16 00:04:38,431][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-16 00:06:08,965][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-16 00:06:08,966][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-16 00:06:33,840][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-16 00:06:33,840][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-16 00:07:17,261][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-16 00:07:17,261][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-16 00:08:00,479][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-16 00:08:00,479][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-16 00:08:20,286][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-16 00:08:20,287][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-16 00:08:39,809][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-16 00:08:39,810][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-16 00:09:24,792][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-16 00:09:24,793][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-16 00:09:37,541][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-16 00:09:37,541][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-16 09:55:23,812][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-16 09:55:23,812][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-16 10:03:30,414][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-16 10:03:30,414][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal
+[2021-08-16 10:03:39,740][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
+[2021-08-16 10:03:39,740][WARNING]>Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal

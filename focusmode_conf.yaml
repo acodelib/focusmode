@@ -1,0 +1,17 @@
+RUNTIMETYPE: TEST #either TEST or PROD
+
+LOGFILE:     #affected by RUNTIMETYPE !
+    TEST: focusmode_log_test.txt
+    PROD: focusmode_log.txt
+    
+
+REDIRECT_BACK_IP: 87.248.114.11
+HOST_FILE_PATH: "C:/Windows/System32/drivers/etc/hosts"
+ENVIRON_VAR_NAME: FOCUSMODECONTROL
+
+
+SITELIST:
+    youtube: www.youtube.com
+    timesnewroman: www.timesnewroman.ro
+    digi24: www.digi24.ro
+    mediafax: www.mediafax.ro
