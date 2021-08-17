@@ -70,24 +70,17 @@ class TestFocusMode(unittest.TestCase):
         
         self.assertEqual("Free", check_result)
 #------------------------------------------------------------------------------------------------------
-    def test_processEnvironVar_MissingEnvVar(self):
-        environ_dummy = {"TESTING":"NOTHING", "THETESTY":"SOMETHING", "OTHER":"OTHERS"}
+    def test_processModeConfig_WrongValue(self):
+        mode_dummy = "Wrong"
         service = FocusMode()        
-        check_result = service.processEnvironVar(environ_dummy)
-        
-        self.assertEqual("Normal", check_result)
-
-    def test_processEnvironVar_WrongValue(self):
-        environ_dummy = {"TESTING":"NOTHING", "THETESTY":"SOMETHING", "OTHER":"OTHERS", "FOCUSMODECONTROL":"Wrong"}
-        service = FocusMode()        
-        check_result = service.processEnvironVar(environ_dummy)
+        check_result = service.processModeConfig(mode_dummy)
         
         self.assertEqual("Normal", check_result)
         
-    def test_processEnvironVar_Free(self):
-        environ_dummy = {"TESTING":"NOTHING", "THETESTY":"SOMETHING", "OTHER":"OTHERS", "FOCUSMODECONTROL":"Free"}
+    def test_processModeConfig_Free(self):
+        environ_dummy = "Free"
         service = FocusMode()        
-        check_result = service.processEnvironVar(environ_dummy)
+        check_result = service.processModeConfig(environ_dummy)
         
         self.assertEqual("Free", check_result)
 #------------------------------------------------------------------------------------------------------        

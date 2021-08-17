@@ -18,7 +18,9 @@ class FocusMode(object):
         self.REDIRECT_BACK_IP   = self.CONFIGS["REDIRECT_BACK_IP"]
         self.HOST_FILE_PATH     = self.CONFIGS["HOST_FILE_PATH"]
         self.ENVIRON_VAR_NAME   = self.CONFIGS["ENVIRON_VAR_NAME"]
-        self.SITELIST: list     = list(self.CONFIGS["SITELIST"].values())    
+        self.MODE               = self.CONFIGS["MODE"] 
+        self.SITELIST: list     = list(self.CONFIGS["SITELIST"].values())
+                   
         self.ip_pattern         = "^(" + self.REDIRECT_BACK_IP + ")"
         self.url_pattern        = r"www\.[\S]+?\.[a-z]{2,4}"
     
@@ -30,16 +32,13 @@ class FocusMode(object):
             
         self.REDIRECT_BACK_IP    = "87.248.114.11"
         self.SITELIST: list      = list(self.CONFIGS["SITELIST"].values())
+        self.MODE                = self.CONFIGS["MODE"]
         
-    def processEnvironVar(self,environ_copy: dict) -> str:
-        environ_var = ""        
-        if self.ENVIRON_VAR_NAME not in environ_copy.keys():
-            logging.warning("FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal")
-            return "Normal"
-        if environ_copy[self.ENVIRON_VAR_NAME] not in ("Normal","Focus","Free"):
-            logging.warning("Env var FOCUSMODECONTROL has a invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal")
+    def processModeConfig(self,mode_config: str) -> str:
+        if mode_config not in ("Normal","Focus","Free"):
+            logging.warning("MODE config value has an invalid value. Valid values: Focus,Free,Normal. Will ignore and presume: Normal")
             return "Normal"    
-        return environ_copy[self.ENVIRON_VAR_NAME]    
+        return mode_config    
     
     def isWorkingHours(self,time_stamp:datetime) -> bool:
         if time_stamp.isoweekday() < 6:
@@ -102,24 +101,21 @@ class FocusMode(object):
         
         return is_work_done
     
-    def runAppRoutine(self):
-        environment_vars    = os.environ.copy()
-        focusmode_var       = self.processEnvironVar(environment_vars)
+    def runAppRoutine(self):        
+        focusmode_var       = self.processModeConfig(self.MODE)
         focus_mode          = self.computeFocusMode(focusmode_var, datetime.now())
-        print(focus_mode)
-        if focus_mode == "Focus":
-            print("in focus")
+                
+        if focus_mode == "Focus":        
             with open(self.HOST_FILE_PATH, "r") as f:
                 urls_to_write = self.checkMissingRedirectsFromFile(f, self.SITELIST)
-            if urls_to_write:                
-                print("focus will write")
+            if urls_to_write:               
+                
                 with open(self.HOST_FILE_PATH,"a+") as f: #TODO: whatif file is already open as update
                     self.appendRedirects(f, urls_to_write)
                 os.popen("ipconfig /flushdns")
                 logging.info("URLs were ADDED to the host file.")
         
-        if focus_mode == "Free":
-            print("in free")     
+        if focus_mode == "Free":                
             with open(self.HOST_FILE_PATH,"r") as f:
                 urls_missing_from_file = self.checkMissingRedirectsFromFile(f, self.SITELIST)       
             if set(urls_missing_from_file) != set(self.SITELIST):
