@@ -4,6 +4,7 @@ from datetime import datetime
 import logging
 import re
 import io
+import time
 
 class FocusMode(object):
     
@@ -28,7 +29,7 @@ class FocusMode(object):
             self.CONFIGS = yaml.safe_load(f)
             
         self.REDIRECT_BACK_IP    = "87.248.114.11"
-        self.SITELIST: list      = list(CONFIGS["SITELIST"].values())
+        self.SITELIST: list      = list(self.CONFIGS["SITELIST"].values())
         
     def processEnvironVar(self,environ_copy: dict) -> str:
         environ_var = ""        
@@ -66,8 +67,8 @@ class FocusMode(object):
             if self.isRedirectIpAtStartOfLine(line):                    
                 urls_in_file.append(self.getUrlFromString(line)) 
         file_stream.seek(0)
-        return list(set(target_urls) - set(urls_in_file))
-        
+        return list(set(target_urls) - set(urls_in_file))        
+            
     def appendNewLineIfCase(self,file_stream):
         stream_length = file_stream.seek(0,os.SEEK_END)
         file_stream.seek(stream_length - 1)
@@ -82,41 +83,59 @@ class FocusMode(object):
             file_stream.write(f"{self.REDIRECT_BACK_IP} {url}\n")
         file_stream.seek(0)
         
-    def removeRedirects(self, file_stream, url_list: list):
+    def removeRedirects(self, file_stream, url_list: list) -> bool:
         new_file_txt: str= ""
+        is_work_done: bool = False        
         for line in file_stream.readlines():
             if self.isRedirectIpAtStartOfLine(line) and self.getUrlFromString(line):
+                is_work_done = True
                 continue
-            else:
+            else:                
                 new_file_txt += line
         try:
             file_stream.seek(0)
             file_stream.truncate(0)
         except Exception as e:
-            logging.ERROR(f"Can't empty the file! System error:{e.message}")
+            logging.ERROR(f"Can't empty the file! System error:{e.message}")            
         else:
             file_stream.write(new_file_txt)            
+        
+        return is_work_done
     
     def runAppRoutine(self):
         environment_vars    = os.environ.copy()
         focusmode_var       = self.processEnvironVar(environment_vars)
         focus_mode          = self.computeFocusMode(focusmode_var, datetime.now())
-        
+        print(focus_mode)
         if focus_mode == "Focus":
+            print("in focus")
             with open(self.HOST_FILE_PATH, "r") as f:
                 urls_to_write = self.checkMissingRedirectsFromFile(f, self.SITELIST)
-            if urls_to_write:
-                logging.info("URLs need to be added to the host file.")
-                with open(self.HOST_FILE_PATH,"a+") as f:
+            if urls_to_write:                
+                print("focus will write")
+                with open(self.HOST_FILE_PATH,"a+") as f: #TODO: whatif file is already open as update
                     self.appendRedirects(f, urls_to_write)
                 os.popen("ipconfig /flushdns")
+                logging.info("URLs were ADDED to the host file.")
         
         if focus_mode == "Free":
-            logging.info("Host file will be scanned to remove any URLs from the list.")
-            with open(self.HOST_FILE_PATH,"r+") as f:                
-                self.removeRedirects(f, self.SITELIST)
-            os.popen("ipconfig /flushdns")        
+            print("in free")     
+            with open(self.HOST_FILE_PATH,"r") as f:
+                urls_missing_from_file = self.checkMissingRedirectsFromFile(f, self.SITELIST)       
+            if set(urls_missing_from_file) != set(self.SITELIST):
+                with open(self.HOST_FILE_PATH,"r+") as f: #TODO what if file is already open as update
+                    is_any_deletes = self.removeRedirects(f, self.SITELIST)
+                logging.info("URLs were DELETED from the host file.")                           
+                os.popen("ipconfig /flushdns")        
+                           
 
 if __name__ == '__main__':
     service = FocusMode()
-    service.runAppRoutine()   
+    while 1 == 1:
+        service.refreshConfigs()
+        service.runAppRoutine()
+        time.sleep(5)
+            
+        
+        
+    
