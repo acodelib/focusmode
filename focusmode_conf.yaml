@@ -5,7 +5,7 @@ LOGFILE:     #affected by RUNTIMETYPE !
     PROD: focusmode_log.txt
     
 
-MODE: Normal #possible values: Normal, Free, Focus
+MODE: Free #possible values: Normal, Free, Focus
 
 REDIRECT_BACK_IP: 87.248.114.11
 HOST_FILE_PATH: "C:/Windows/System32/drivers/etc/hosts"

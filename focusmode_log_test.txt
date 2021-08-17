@@ -1,17 +1,1 @@
-[2021-08-17 13:11:45,930][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
-[2021-08-17 13:12:24,343][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
-[2021-08-17 13:12:24,344][INFO]>URLs need to be added to the host file.
-[2021-08-17 13:12:26,859][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
-[2021-08-17 13:12:56,253][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
-[2021-08-17 13:16:31,190][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
-[2021-08-17 13:17:47,964][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
-[2021-08-17 13:18:54,258][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
-[2021-08-17 13:19:42,479][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
-[2021-08-17 13:20:19,445][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
-[2021-08-17 13:20:47,590][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
-[2021-08-17 13:21:53,558][WARNING]>FOCUSMODECONTROL not detected in Environment Variables. App will run in mode: Normal
-[2021-08-17 13:46:12,033][INFO]>Host file will be scanned to remove any URLs from the list.
-[2021-08-17 13:47:11,639][INFO]>Host file will be scanned to remove any URLs from the list.
-[2021-08-17 13:52:06,516][INFO]>URLs need to be added to the host file.
-[2021-08-17 13:52:44,646][INFO]>Host file will be scanned to remove any URLs from the list.
-[2021-08-17 13:53:42,621][INFO]>URLs need to be added to the host file.
+

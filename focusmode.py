@@ -129,7 +129,11 @@ if __name__ == '__main__':
     service = FocusMode()
     while 1 == 1:
         service.refreshConfigs()
-        service.runAppRoutine()
+        try:
+            service.runAppRoutine()
+        except Exception as e:
+            logging.info(f"!FATAL! system message:{str(e)}")            
+            raise e from None
         time.sleep(5)
             
         
