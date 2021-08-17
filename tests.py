@@ -97,8 +97,38 @@ class TestFocusMode(unittest.TestCase):
         check_result = service.getUrlFromString(test_str)
         
         self.assertEqual("www.testingaddr.info", check_result)
+        
+#------------------------------------------------------------------------------------------------------
+    def test_appendNewLineIfCase_NoNL(self):
+        test_file = """
+SOMETHING written here
+SOMETHING ELSE WRITTEN here"""
+        expected_result = """
+SOMETHING written here
+SOMETHING ELSE WRITTEN here
+"""
+        test_stream = io.StringIO(test_file)
+        service = FocusMode()
+        service.appendNewLineIfCase(test_stream)
+        
+        self.assertEqual(expected_result, test_stream.getvalue())
+    
+    def test_appendNewLineIfCase_withNL(self):
+        test_file = """
+SOMETHING written here
+SOMETHING ELSE WRITTEN here
+"""
+        expected_result = """
+SOMETHING written here
+SOMETHING ELSE WRITTEN here
+"""
+        test_stream = io.StringIO(test_file)
+        service = FocusMode()
+        service.appendNewLineIfCase(test_stream)
+        
+        self.assertEqual(expected_result, test_stream.getvalue())    
 #------------------------------------------------------------------------------------------------------        
-    def test_checkMissingRedirectsFromFile(self):
+    def test_checkMissingRedirectsFromFile_Partial(self):
         url_list = ["www.samba.xx", "www.digi24.info", "www.music.ppp", "www.test.dbf"]
         expected_result = ["www.samba.xx","www.test.dbf"]
         file_text = """
@@ -114,6 +144,23 @@ class TestFocusMode(unittest.TestCase):
         func_result = service.checkMissingRedirectsFromFile(test_stream,url_list)      
 
         self.assertTrue(set(expected_result) == set(func_result))       
+
+    def test_checkMissingRedirectsFromFile_All(self):
+        url_list = ["www.samba.xx", "www.digi24.info", "www.music.ppp", "www.test.dbf"]
+        expected_result = ["www.samba.xx", "www.digi24.info", "www.music.ppp", "www.test.dbf"]
+        file_text = """
+
+172.11.33.132 www.samba.xx
+
+87.248.114.11 www.cici.ppp
+87.248.114.11 www.plipli24.info
+10.101.122.104 www.piupiu.ro
+"""
+        test_stream = io.StringIO(file_text)
+        service = FocusMode()        
+        func_result = service.checkMissingRedirectsFromFile(test_stream,url_list)      
+
+        self.assertTrue(set(expected_result) == set(func_result))           
 #------------------------------------------------------------------------------------------------------   
     def test_appendRedirects(self):
         url_list = ["www.timesnewroman.ro", "www.wikipedia.ro", "www.facebook.ro"]
@@ -137,6 +184,34 @@ class TestFocusMode(unittest.TestCase):
         service.appendRedirects(test_stream, url_list)                
 
         self.assertEqual(expected_result, test_stream.getvalue())
+        
+    def test_removeRedirects(self):
+        url_list = ["www.timesnewroman.ro", "www.wikipedia.ro", "www.facebook.ro"]
+        file_text ="""
+#some random comment
+172.11.33.191 www.bla.info
+
+#comment
+87.248.114.11 www.timesnewroman.ro
+11.08.113.11 www.pic.com
+
+187.8.11.11 www.wikipedia.ro
+87.248.114.11 www.facebook.ro
+"""
+        expected_result ="""
+#some random comment
+172.11.33.191 www.bla.info
+
+#comment
+11.08.113.11 www.pic.com
+
+187.8.11.11 www.wikipedia.ro
+"""      
+        test_stream = io.StringIO(file_text)
+        service = FocusMode()
+        service.removeRedirects(test_stream, url_list)
+        self.assertEqual(expected_result, test_stream.getvalue())
+         
                 
 if __name__ == '__main__':
     unittest.main()    

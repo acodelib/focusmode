@@ -6,7 +6,7 @@ LOGFILE:     #affected by RUNTIMETYPE !
     
 
 REDIRECT_BACK_IP: 87.248.114.11
-HOST_FILE_PATH: "C:/Windows/System32/drivers/etc/hosts"
+HOST_FILE_PATH: test_host.txt #"C:/Windows/System32/drivers/etc/hosts"
 ENVIRON_VAR_NAME: FOCUSMODECONTROL
 
 
